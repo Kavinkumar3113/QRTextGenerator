@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code to Text Converter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code to Text Converter</h1>
+        <div class="upload-section">
+            <label for="qrInput">Upload QR Code Image:</label>
+            <input type="file" id="qrInput" accept="image/*">
+        </div>
+        <canvas id="qrCanvas" hidden></canvas>
+        <div class="result-section">
+            <h2>Scanned Text:</h2>
+            <textarea id="result" rows="4" cols="50" readonly></textarea>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jsqr/dist/jsQR.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
